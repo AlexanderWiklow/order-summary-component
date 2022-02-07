@@ -1,0 +1,192 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 */
+
+/*===========================*/
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* * {
+  margin: 0 auto;
+  padding: 0;
+} */
+
+body {
+  /* width: 100%; */
+  /* background-repeat: no-repeat;
+
+  font-size: 16px;
+  min-height: 100%;
+  background: lightblue; */
+  font-size: 18px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  background-image: url("/assets/images/pattern-background-desktop.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: var(--Pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-wrapper {
+  /* display: flexbox; */
+  /* padding: 1rem 1rem 2.7rem 1rem; */
+  /* box-sizing: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%);
+  width: 84%;
+  max-width: 20rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border-radius: 1.25rem; */
+}
+
+.card-wrapper {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 85vw;
+  max-width: 400px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0px 20px 50px -7px rgb(183, 191, 241);
+  padding-bottom: 2rem;
+}
+
+.container {
+  padding: 0.5rem 0 0 0.5rem;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+}
+
+.card-body-title {
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  text-align: center;
+  font-weight: 900;
+}
+
+.card-body-text {
+  text-align: center;
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+}
+
+.card-plan {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  background-color: var(--Very-pale-blue);
+  border-radius: 12px;
+  margin: 1.5rem 2rem 2rem 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: var(--dark-blue);
+  margin-bottom: 0.1rem;
+}
+
+.year {
+  line-height: 1.7rem;
+  font-size: 0.9rem;
+  color: var(--Desaturated-blue);
+  margin-top: 0.1rem;
+}
+
+.card-change {
+  justify-self: end;
+  align-self: center;
+  font-weight: var(--fw-700);
+  font-size: 0.8rem;
+  color: var(--Bright-blue);
+  text-decoration: underline;
+}
+
+.card-change:hover {
+  text-decoration: none;
+  color: hsl(245, 83%, 68%);
+}
+
+.btn-proceed,
+.btn-cancel {
+  display: block;
+  text-align: center;
+  padding: 0.7rem 0;
+  margin: 0.8rem 2rem 0 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.btn-proceed {
+  background-color: var(--Bright-blue);
+  color: #fff;
+  font-weight: ;
+  box-shadow: 0 18px 30px -7px rgb(197, 189, 245);
+}
+
+.btn-proceed:hover {
+  background-color: hsl(245, 83%, 68%);
+}
+
+.btn-cancel {
+  font-size: 0.9rem;
+  color: var(--Desaturated-blue);
+}
+
+.btn-cancel:hover {
+  color: var(--Dark-blue);
+}
