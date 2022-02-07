@@ -1,6 +1,6 @@
 # Frontend Mentor - Order summary card
 
-(assets/images/screenshot.png)
+![](assets/images/screenshot.png)
 
 ## Welcome! 👋
 
